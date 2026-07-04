@@ -1,16 +1,308 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Agri GeoIntel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agri GeoIntel | GeoAI Decision Intelligence</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f7faf9;
+      color: #12302a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #06251f;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h2 {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+    }
+
+    .hero {
+      min-height: 85vh;
+      background: linear-gradient(rgba(6,37,31,0.82), rgba(6,37,31,0.82)),
+        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      margin-bottom: 32px;
+      color: #e6f4ef;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #28b36b;
+      color: white;
+      padding: 14px 26px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 2px solid white;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 18px;
+      color: #06251f;
+    }
+
+    .section-text {
+      max-width: 900px;
+      font-size: 18px;
+      color: #34534c;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #0b3d33;
+      font-size: 22px;
+    }
+
+    .dark {
+      background: #06251f;
+      color: white;
+    }
+
+    .dark .section-title {
+      color: white;
+    }
+
+    .dark .section-text {
+      color: #cfe5dd;
+    }
+
+    .highlight {
+      background: #e8f6ef;
+      border-left: 6px solid #28b36b;
+      padding: 35px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    footer {
+      background: #041a16;
+      color: white;
+      text-align: center;
+      padding: 30px 8%;
+    }
+
+    footer a {
+      color: #7be0ad;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Agri GeoIntel</h1>
-  <p>Agri GeoIntel provides data-driven GeoAI solutions for agriculture and business decision-making under uncertainty.</p>
 
-  <h2>Our Focus</h2>
-  <p>We support agricultural supply chains, market intelligence, risk analysis, and data-driven planning using geospatial analytics and intelligent agents.</p>
+  <header>
+    <h2>Agri GeoIntel</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#gait">GAIT™</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h2>Contact</h2>
-  <p>Email: Kazi@agrigeointel.com</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>GeoAI Decision Intelligence for Agriculture and Supply Chains</h1>
+      <p>
+        Agri GeoIntel helps organizations transform uncertainty into actionable intelligence
+        using geospatial analytics, AI agents, remote sensing, and data-driven decision support.
+      </p>
+      <a href="#solutions" class="btn">Explore Solutions</a>
+      <a href="#contact" class="btn secondary">Contact Us</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Agri GeoIntel</h2>
+    <p class="section-text">
+      Agri GeoIntel is a technology startup focused on GeoAI-powered intelligence for agriculture,
+      resilient supply chains, risk analytics, and business decision-making. We combine spatial data,
+      artificial intelligence, simulation, and domain expertise to help stakeholders plan under uncertainty.
+    </p>
+
+    <div class="highlight">
+      <h3>Our Mission</h3>
+      <p>
+        To deliver practical, science-based, and AI-enabled geospatial intelligence that supports smarter,
+        faster, and more resilient decisions across agricultural and environmental systems.
+      </p>
+    </div>
+  </section>
+
+  <section id="solutions" class="dark">
+    <h2 class="section-title">Solutions</h2>
+    <p class="section-text">
+      We develop analytical tools and decision-support systems for agriculture, markets, logistics,
+      risk management, and emerging data-driven business applications.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🌾 Agriculture Intelligence</h3>
+        <p>Crop monitoring, spatial risk assessment, production intelligence, and agricultural planning.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛰 GeoAI Analytics</h3>
+        <p>Remote sensing, GIS, machine learning, and geospatial data integration for decision support.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚚 Supply Chain Resilience</h3>
+        <p>Analytics for disruption, logistics risk, perishable food systems, and adaptive planning.</p>
+      </div>
+
+      <div class="card">
+        <h3>🤖 AI Decision Agents</h3>
+        <p>AI-assisted workflows that help businesses interpret data, compare scenarios, and act faster.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gait">
+    <h2 class="section-title">GAIT™ Platform</h2>
+    <p class="section-text">
+      GAIT™ — GeoAI Intelligence Tool — is Agri GeoIntel’s emerging platform concept for turning
+      geospatial data, uncertainty, and business context into decision-ready intelligence.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Predictive Insights</h3>
+        <p>Forecast risks, disruptions, and spatial patterns using AI and geospatial modeling.</p>
+      </div>
+
+      <div class="card">
+        <h3>Scenario Analysis</h3>
+        <p>Compare alternative decisions under changing market, environmental, and operational conditions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Interactive Dashboards</h3>
+        <p>Translate complex data into simple visual tools for managers, researchers, and partners.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Research & Innovation</h2>
+    <p class="section-text">
+      Agri GeoIntel is developing solutions at the intersection of GeoAI, agent-based modeling,
+      agricultural data science, supply chain analytics, and decision intelligence. Our current innovation
+      focus includes resilient perishable fruit supply chains, AI-enabled spatial analytics, and scalable
+      decision-support tools for agricultural businesses.
+    </p>
+  </section>
+
+  <section id="contact" class="dark">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-text">
+      Interested in collaboration, research partnerships, or decision-intelligence solutions?
+    </p>
+    <p style="font-size: 22px;">
+      Email: <a href="mailto:Kazi@agrigeointel.com" style="color:#7be0ad;">Kazi@agrigeointel.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Agri GeoIntel. All rights reserved.</p>
+    <p><a href="mailto:Kazi@agrigeointel.com">Kazi@agrigeointel.com</a></p>
+  </footer>
+
 </body>
 </html>
